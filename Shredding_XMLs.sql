@@ -34,10 +34,10 @@ image_path_3, image_type_4, image_title_4, image_path_4, image_type_5, image_tit
 
 SELECT 
 	T.N.value('(code/text())[1]','VARCHAR(15)') AS Code,
-    T.N.value('(title/text())[1]','VARCHAR(100)') AS Title,
-    T.N.value('(description/text())[1]','VARCHAR(1000)') AS Description,
-    T.N.value('(categoryPath/text())[1]','VARCHAR(20)') AS Category_path,
-    T.N.value('(packaging/text())[1]','VARCHAR(10)') AS Packaging,
+	T.N.value('(title/text())[1]','VARCHAR(100)') AS Title,
+	T.N.value('(description/text())[1]','VARCHAR(1000)') AS Description,
+	T.N.value('(categoryPath/text())[1]','VARCHAR(20)') AS Category_path,
+	T.N.value('(packaging/text())[1]','VARCHAR(10)') AS Packaging,
 	T2.N.value('(@code[1])','INT') AS size_code,
 	T2.N.value('(@title[1])','VARCHAR(20)') AS size_title,
 	T3.N.value('(@code)[1]','VARCHAR(3)') AS colour_code,
