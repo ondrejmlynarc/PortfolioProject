@@ -408,15 +408,15 @@ WHERE image_type_1 != 'OH0' AND image_type_5 = 'OH0'
 
 -- STEP7:
 -- create short description from long descriptions by extracting first sentences before '.' 
--- or 2nd occurences of 'ï'
+-- or 2nd occurences of '¬ï'
 
 
 ALTER TABLE GAJOStest..catalog_variant_sk
 ADD short_decription AS (
 	CASE 
 		WHEN description LIKE '%.%' THEN LEFT(description, CHARINDEX('.', description))
-		WHEN description LIKE '%ï%' AND CHARINDEX('ï', description, CHARINDEX('ï', description)+1)-1 >= 0
-		THEN LEFT(description, CHARINDEX('ï', description, CHARINDEX('ï', description)+1)-1)
+		WHEN description LIKE '%¬ï%' AND CHARINDEX('¬ï', description, CHARINDEX('¬ï', description)+1)-1 >= 0
+		THEN LEFT(description, CHARINDEX('¬ï', description, CHARINDEX('¬ï', description)+1)-1)
 	ELSE description END)
 
 
@@ -429,7 +429,7 @@ ALTER TABLE GAJOStest..catalog_variant_sk
 ADD printing AS (
 	CASE 
 		WHEN category_path LIKE 'A01%' 
-		THEN '¡no' ELSE null 
+		THEN '√Åno' ELSE null 
 	END)
 
 
@@ -493,7 +493,7 @@ WHERE NOT EXISTS
 	AND NOT EXISTS (
 					SELECT 1
 					FROM GAJOStest..export_OMEGA
-					WHERE export_OMEGA.[»Ìslo karty] = catalog_prim_key_sk.variant_code)
+					WHERE export_OMEGA.[√à√≠slo karty] = catalog_prim_key_sk.variant_code)
 )
 SELECT * FROM cte_catalog_eshop_omega
 WHERE code in
