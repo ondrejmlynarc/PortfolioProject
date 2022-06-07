@@ -1,5 +1,4 @@
-# Z by HP Unlocked Challenge 4
-Movie Recommendation System and Analysis
+# Movie Recommendation System and Analysis
 
 ## The Task
 Perform analysis and basic recommendation system based on similar genres and movies which Users prefer.
