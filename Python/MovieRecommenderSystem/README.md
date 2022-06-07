@@ -8,8 +8,8 @@ Perform analysis and build a basic recommendation system based on similar genres
 - Recommendation systems based on actors, movies, genres.
 
 ## Calculating Profit of a Movie
-- Budget: It is an amount which roducers spend to produce a Movie which includes the production, casting, and advertisements cost.
-- Gross: It is an amount which Producers earn by releasing their movies in theaters, selling satellite rights to TV, OTT platforms such as Prime, Hulu, Disney+Hotstar, Netflix etc.
+- Budget: It is an amount which producers spend to produce a Movie which includes the production, casting, and advertisements cost.
+- Gross: It is an amount which producers earn by releasing their movies in theaters, selling satellite rights to TV, OTT platforms such as Prime, Hulu, Disney+Hotstar, Netflix etc.
 - Profit: Gross - Budget: the formula will be used to calculate top most profitable movies of all time.                                                                                                                           
 
 ## Calculating Social Media Popularity
