@@ -1,6 +1,4 @@
 # Movie Recommendation System and Analysis
-
-## The Task
 Perform analysis and build a basic recommendation system based on similar genres and movies that users prefer.
 
 ## Some of the Key Points on which this analysis will be focusing include:
